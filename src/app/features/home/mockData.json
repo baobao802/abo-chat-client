@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "sender": "Linh Nguyen",
+    "content": "Hi",
+    "type": "TEXT",
+    "createAt": "20:20"
+  },
+  {
+    "id": 2,
+    "sender": "Linh Nguyen",
+    "content": "How are u?",
+    "type": "TEXT",
+    "createAt": "20:21"
+  },
+  {
+    "id": 3,
+    "sender": "Quoc Bao",
+    "content": "Hi Linh",
+    "type": "TEXT",
+    "createAt": "20:20"
+  },
+  {
+    "id": 4,
+    "sender": "Quoc Bao",
+    "content": "I'm okay. Let's send me your pics.",
+    "type": "TEXT",
+    "createAt": "20:20"
+  },
+  {
+    "id": 5,
+    "sender": "Linh Nguyen",
+    "content": "https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/255260488_1023493471765510_4455611813483065945_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=b9115d&_nc_ohc=6qL64-Qc4R8AX-E5cge&_nc_ht=scontent.fdad3-1.fna&oh=b49fc74a66d785d9d91ce62f6031c221&oe=618FC936",
+    "type": "IMAGE",
+    "createAt": "20:20"
+  },
+  {
+    "id": 6,
+    "sender": "Linh Nguyen",
+    "content": "https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/255243278_1023493488432175_4229515277582510759_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=b9115d&_nc_ohc=FV8HsJ-WlfoAX-Ved7V&_nc_ht=scontent.fdad3-1.fna&oh=fa71e0584d82f1c89c24ef3b9d760fe2&oe=61916E66",
+    "type": "IMAGE",
+    "createAt": "20:20"
+  }
+]
