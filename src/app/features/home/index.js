@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Box, Container, HStack } from '@chakra-ui/layout';
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { useDispatch, useSelector } from 'react-redux';
@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { onConnect, subscribe } from '../../core/ws';
 import { selectUserLoggedIn } from '../../shared/store/auth/authSlice';
 import {
+  getAllMessages,
   selectAllMessages,
   sendMessage as pushMessage,
 } from '../../shared/store/chat/chatSlice';
@@ -31,6 +32,11 @@ const Home = () => {
       }
     });
   });
+
+  useEffect(() => {
+    dispatch(getAllMessages());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const isOutgoing = sender => user.username === sender;
 

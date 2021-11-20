@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import api from '../../../core/api';
 import { STATUS } from '../constant';
 
 const initialState = {
@@ -10,7 +11,8 @@ const initialState = {
 export const getAllMessages = createAsyncThunk(
   'chat/getAllMessages',
   async () => {
-    // get all message here
+    const res = await api.get('/messages');
+    return res.data;
   }
 );
 
