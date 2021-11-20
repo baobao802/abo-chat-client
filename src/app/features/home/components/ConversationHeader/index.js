@@ -38,8 +38,13 @@ const ConversationHeader = () => {
         </Box>
       </HStack>
       <HStack spacing="3" color="twitter.500">
-        {fnConfig.map(({ icon, label }) => (
-          <Tooltip label={label} aria-label={label} rounded="md">
+        {fnConfig.map(({ icon, label }, index) => (
+          <Tooltip
+            key={`ifn-${index}`}
+            label={label}
+            aria-label={label}
+            rounded="md"
+          >
             <span>
               <Icon as={icon} fontSize="3xl" cursor="pointer" />
             </span>
