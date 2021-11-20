@@ -5,8 +5,7 @@ import localStore from '../../shared/utils/localStore';
 const ws = Stomp.over(
   () =>
     new SockJS(
-      `${process.env.REACT_APP_BASE_URL}/ws` ||
-        'http://localhost:8080/api/v1/ws'
+      `${process.env.REACT_APP_BASE_URL}ws` || 'http://localhost:8080/api/v1/ws'
     )
 );
 
