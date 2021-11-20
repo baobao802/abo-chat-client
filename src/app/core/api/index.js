@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'http://localhost:8080/api/v1/',
+  baseURL: process.env.REACT_APP_BASE_URL || 'http://localhost:8080/api/v1/',
   timeout: 4000,
 });

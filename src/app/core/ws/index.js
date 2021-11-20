@@ -2,7 +2,13 @@ import { Stomp } from '@stomp/stompjs';
 import SockJS from 'sockjs-client';
 import localStore from '../../shared/utils/localStore';
 
-const ws = Stomp.over(() => new SockJS('http://localhost:8080/api/v1/ws'));
+const ws = Stomp.over(
+  () =>
+    new SockJS(
+      // process.env.REACT_APP_BASE_URL || 'http://localhost:8080/api/v1/'
+      'http://localhost:8080/api/v1/'
+    )
+);
 
 ws.configure({
   reconnectDelay: 5000,
